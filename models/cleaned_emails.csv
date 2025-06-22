@@ -1,0 +1,91 @@
+email_text,category,label
+when will i receive my bonus,HR,0
+can you tell me my leave balance,HR,0
+i need to update my bank details for salary,HR,0
+is there a pf deduction for contract employees,HR,0
+how do i apply for maternity leave,HR,0
+can you share the holiday calendar for this year,HR,0
+please guide me on performance appraisal,HR,0
+can i carry forward my unused leaves,HR,0
+is there a policy for remote working,HR,0
+i want to update my home address in records,HR,0
+is there any internal job posting this month,HR,0
+please share the payslip for last month,HR,0
+what are the guidelines for dress code,HR,0
+i would like to schedule a meeting with hr,HR,0
+can i convert casual leave to sick leave,HR,0
+is there a referral policy for hiring,HR,0
+i want to participate in hr activities,HR,0
+can i get a copy of my experience letter,HR,0
+can i change my manager in the system,HR,0
+what is the notice period for resignation,HR,0
+i would like to apply for a sick leave for tomorrow,HR,0
+i need a letter for address proof,HR,0
+how do i claim health insurance,HR,0
+my salary has not been credited,HR,0
+please confirm my attendance for last week,HR,0
+please update my emergency contact number,HR,0
+can i change my shift timing,HR,0
+what are the leave policies for new employees,HR,0
+kindly share the induction schedule,HR,0
+i want to know the procedure for resignation,HR,0
+please configure my email on mobile,IT,1
+the system clock is showing the wrong time,IT,1
+cant access the project management tool,IT,1
+how can i recover deleted files,IT,1
+how to run jupyter notebook,IT,1
+my laptop is not turning on,IT,1
+ms teams is not launching,IT,1
+need assistance installing docker,IT,1
+zoom is not working on my laptop,IT,1
+can you install python on my system,IT,1
+the system is overheating,IT,1
+can you provide a new lan cable,IT,1
+my account is locked after failed attempts,IT,1
+the printer is not working,IT,1
+i am getting a blue screen error,IT,1
+the mouse and keyboard stopped working,IT,1
+my webcam is not working during calls,IT,1
+the speakers are not working,IT,1
+the wifi is too slow in my area,IT,1
+i need help accessing the shared folder,IT,1
+please help with setting up dual monitors,IT,1
+how do i reset my windows password,IT,1
+there is a problem with screen resolution,IT,1
+my system fan is making noise,IT,1
+the vpn is not connecting,IT,1
+my outlook is crashing frequently,IT,1
+can you unblock a website for me,IT,1
+need help with antivirus update,IT,1
+i forgot my email password,IT,1
+i need admin access for a project,IT,1
+there is a broken chair in the pantry,Other,2
+please arrange snacks for the friday meeting,Other,2
+please send someone to fix the projector,Other,2
+can i reserve the recreation room,Other,2
+is there parking space for visitors,Other,2
+there is water leakage near the pantry,Other,2
+requesting help with printing posters,Other,2
+can i use the company vehicle for field work,Other,2
+i want to submit my courier bill,Other,2
+we need whiteboard markers in the meeting room,Other,2
+who should i contact for event planning,Other,2
+we need tissues in the washrooms,Other,2
+the washroom on the 2nd floor is not clean,Other,2
+please refill the water can,Other,2
+the power sockets are not working,Other,2
+can we get more dustbins near desks,Other,2
+can we schedule a team lunch this week,Other,2
+there is noise from the construction next door,Other,2
+the air conditioning is not working,Other,2
+requesting weekend office access,Other,2
+we need more chairs in the common area,Other,2
+who is the admin for office supplies,Other,2
+can i get extra stationery,Other,2
+i want to book the conference room,Other,2
+please share the contact of the admin head,Other,2
+lights are flickering in the meeting room,Other,2
+requesting a fire drill schedule,Other,2
+who is handling housekeeping complaints,Other,2
+the coffee machine is not dispensing,Other,2
+who can help with travel bookings,Other,2

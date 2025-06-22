@@ -1,0 +1,8 @@
+{
+    "timestamp": "2025-06-22_18-20-43",
+    "email_text": "I forgot my system password. Can you help?",
+    "predicted_category": "IT",
+    "confidence": 0.52,
+    "reason": "Low confidence - manual review required.",
+    "status": "escalated"
+}

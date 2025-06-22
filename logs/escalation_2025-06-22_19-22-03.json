@@ -1,0 +1,8 @@
+{
+    "timestamp": "2025-06-22_19-22-03",
+    "email_text": "Hello,",
+    "predicted_category": "IT",
+    "confidence": 0.44,
+    "reason": "Low confidence - manual review required.",
+    "status": "escalated"
+}

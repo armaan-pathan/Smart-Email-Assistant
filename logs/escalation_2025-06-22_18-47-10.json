@@ -1,0 +1,8 @@
+{
+    "timestamp": "2025-06-22_18-47-10",
+    "email_text": "Hello,\nCan you tell me how do I apply for maternity leave?",
+    "predicted_category": "HR",
+    "confidence": 0.58,
+    "reason": "Low confidence - manual review required.",
+    "status": "escalated"
+}

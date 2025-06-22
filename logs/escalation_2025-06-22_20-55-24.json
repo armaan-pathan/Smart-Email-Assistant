@@ -1,0 +1,8 @@
+{
+    "timestamp": "2025-06-22_20-55-24",
+    "email_text": "Hello,\nI need to update my bank details for salary.\nSo can you tell what the steps are to do the same\n\n",
+    "predicted_category": "HR",
+    "confidence": 0.54,
+    "reason": "Low confidence - manual review required.",
+    "status": "escalated"
+}

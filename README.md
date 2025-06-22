@@ -14,22 +14,102 @@ Smart Email Assistant is an intelligent system designed to automate email classi
 
 ---
 
+## 🧠 Project Architecture
+
+      +--------------------------+
+      |      User Input Email    |
+      +------------+-------------+
+                   |
+        ┌──────────▼──────────┐
+        │  Email Classifier   │  ← ML model classifies email (HR/IT/Other)
+        └──────────┬──────────┘
+                   │
+        ┌──────────▼──────────────┐
+ High Confidence (>= 0.6)         │
+        │                         │
+┌───────────▼──────────┐ ┌─────────▼─────────────┐
+│ Response Generator │ │ Escalation Agent │ ← If low confidence
+│ (LLM-based) │ │ Logs escalation cases │
+└──────────┬───────────┘ └───────────────────────┘
+│
+▼
+Final Email Response
+
+---
+
+
+## ML Model Details & Evaluation
+
+- **Model Type**: Support Vector Classifier (SVC)
+- **Text Vectorization**: TF-IDF Vectorizer
+- **Label Encoding**: Scikit-learn's LabelEncoder
+
+### Dataset:
+- 300 emails (100 HR, 100 IT, 100 Other)
+- After cleaning & deduplication: **91 emails used for training**
+
+### Evaluation Metrics:
+| Metric       | Score     |
+|--------------|-----------|
+| Accuracy     | ~90%+     |
+| Cross-Validation | 5-Fold |
+| Evaluation Done On | Cleaned dataset |
+
+> Models are saved as:
+- `models/model.pkl`
+- `models/vectorizer.pkl`
+- `models/label_encoder.pkl`
+
+---
+
+## 💬 Prompt Design & LLM Integration
+
+- **Model Used**: `google/flan-t5-base` from Hugging Face
+- **Library**: `transformers`
+
+---
+
+##  Setup Instructions
+
+### 1. Clone the Repository
+git clone https://github.com/your-username/smart-email-assistant.git
+cd smart-email-assistant
+
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3.  Requirements File
+streamlit
+scikit-learn
+pandas
+joblib
+transformers
+torch
+
+---
+
+### How to Run
+### Streamlit Web App
+streamlit run app.py
+
+### Terminal (CLI) Version
+python orchestrator.py
+
+---
+
 ##  Project Structure
 
 smart-email-assistant/
-├── app.py # Streamlit UI
-├── orchestrator.py # Pipeline to connect all agents
-├── models/ # Saved ML models (SVC, TFIDF, Label Encoder)
-│ ├── model.pkl
-│ ├── vectorizer.pkl
-│ └── label_encoder.pkl
-├── data/ # Datasets (original + cleaned)
-│ └── cleaned_emails.csv
-├── logs/ # Escalated emails stored as JSON
-│ └── escalation_*.json
-├── agents/ # Agents (Classifier, Responder, Escalator)
-│ ├── email_classifier.py
-│ ├── response_generator.py
-│ └── escalation_agent.py
-└── requirements.txt # Dependencies
+├── app.py                    # Streamlit UI
+├── orchestrator.py           # CLI Orchestrator
+├── models/                   # Saved ML models
+├── data/                     # Dataset files
+├── logs/                     # Escalated emails in JSON
+├── agents/                   # Modular ML + LLM agents
+│   ├── email_classifier.py
+│   ├── response_generator.py
+│   └── escalation_agent.py
+├── requirements.txt
+└── README.md
+
 

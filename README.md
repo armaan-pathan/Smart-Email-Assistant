@@ -77,16 +77,27 @@ python orchestrator.py
 ##  Project Structure
 
 smart-email-assistant/
+
 ├── app.py                    # Streamlit UI
+
 ├── orchestrator.py           # CLI Orchestrator
+
 ├── models/                   # Saved ML models
+
 ├── data/                     # Dataset files
+
 ├── logs/                     # Escalated emails in JSON
+
 ├── agents/                   # Modular ML + LLM agents
+
 │   ├── email_classifier.py
+
 │   ├── response_generator.py
+
 │   └── escalation_agent.py
+
 ├── requirements.txt
+
 └── README.md
 
 

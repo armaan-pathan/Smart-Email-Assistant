@@ -14,33 +14,10 @@ Smart Email Assistant is an intelligent system designed to automate email classi
 
 ---
 
-## 🧠 Project Architecture
-
-      +--------------------------+
-      |      User Input Email    |
-      +------------+-------------+
-                   |
-        ┌──────────▼──────────┐
-        │  Email Classifier   │  ← ML model classifies email (HR/IT/Other)
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────────┐
- High Confidence (>= 0.6)         │
-        │                         │
-┌───────────▼──────────┐ ┌─────────▼─────────────┐
-│ Response Generator │ │ Escalation Agent │ ← If low confidence
-│ (LLM-based) │ │ Logs escalation cases │
-└──────────┬───────────┘ └───────────────────────┘
-│
-▼
-Final Email Response
-
----
-
 
 ## ML Model Details & Evaluation
 
-- **Model Type**: Support Vector Classifier (SVC)
+- **Model Type**: Random Forest Classifier
 - **Text Vectorization**: TF-IDF Vectorizer
 - **Label Encoding**: Scikit-learn's LabelEncoder
 
@@ -62,7 +39,7 @@ Final Email Response
 
 ---
 
-## 💬 Prompt Design & LLM Integration
+##  Prompt Design & LLM Integration
 
 - **Model Used**: `google/flan-t5-base` from Hugging Face
 - **Library**: `transformers`
@@ -72,7 +49,7 @@ Final Email Response
 ##  Setup Instructions
 
 ### 1. Clone the Repository
-git clone https://github.com/your-username/smart-email-assistant.git
+git clone https://github.com/armaan-pathan/Smart-Email-Assistant
 cd smart-email-assistant
 
 ### 2. Install Dependencies

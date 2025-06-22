@@ -18,6 +18,7 @@ Smart Email Assistant is an intelligent system designed to automate email classi
 
 smart-email-assistant/
 ├── app.py # Streamlit UI
+
 ├── orchestrator.py # Pipeline to connect all agents
 ├── models/ # Saved ML models (SVC, TFIDF, Label Encoder)
 │ ├── model.pkl

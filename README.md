@@ -50,6 +50,7 @@ Smart Email Assistant is an intelligent system designed to automate email classi
 
 ### 1. Clone the Repository
 git clone https://github.com/armaan-pathan/Smart-Email-Assistant.git
+
 cd smart-email-assistant
 
 ### 2. Install Dependencies
